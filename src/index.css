@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App theme helpers */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-gradient-to-b from-neutral-900 via-neutral-950 to-black text-white selection:bg-white selection:text-black;
+}
+
+.prose {
+  max-width: none;
+}

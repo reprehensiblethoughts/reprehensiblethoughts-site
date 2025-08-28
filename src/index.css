@@ -2,21 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* App theme helpers */
-:root {
-  color-scheme: dark;
-}
+:root { color-scheme: dark; }
 
 body {
   @apply min-h-screen bg-gradient-to-b from-neutral-900 via-neutral-950 to-black text-white;
 }
 
-/* Selection styles must be applied via a selector, not `@apply` with the `selection:` variant */
 ::selection {
   @apply bg-white text-black;
 }
 
-/* Allow full-width prose where needed */
-.prose {
-  max-width: none;
-}
+.prose { max-width: none; }

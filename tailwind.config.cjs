@@ -1,24 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [
-    // tailwind.config.js
-import typography from '@tailwindcss/typography'
-
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {}
-  },
-  plugins: [typography]
-}
-,
-  ],
-}
+  theme: { extend: {} },
+  plugins: [require('@tailwindcss/typography')],
+};
